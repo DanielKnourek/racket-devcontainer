@@ -2,17 +2,11 @@
 	"name": "racket-devcontainer",
 	"build": {
 		"dockerfile": "Dockerfile",
-		"args": {
-			"COUNTRY": "Germany"
-		}
 	},
 	// Set *default* container specific settings.json values on container create.
 	"customizations": {
 		"vscode": {
 			"settings": {
-				// "magic-racket.lsp.enabled": true,
-				// "magicRacket.languageServer.command": "xvfb-racket",
-				// "magicRacket.general.racketPath": "xvfb-racket",
 				"magicRacket.languageServer.command": "xvfb-run",
 				"magicRacket.languageServer.arguments": [
 					"--auto-servernum",
@@ -37,7 +31,4 @@
 	// "postCreateCommand": "",
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	// "remoteUser": "vscode"
-	// "mounts": [
-	// 	"source=/tmp/.X11-unix,target=/tmp/.X11-unix,type=bind,consistency=cached"
-	// ]
 }
