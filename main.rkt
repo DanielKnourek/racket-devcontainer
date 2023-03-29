@@ -1,3 +1,3 @@
 #lang racket/base
 
-(displayln "Hello World!")
+(displayln "Hello Niagara falls!")
